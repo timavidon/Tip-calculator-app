@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/timavidon/Tip-calculator-app)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://timavidon.github.io/Tip-calculator-app/)
 
 ## My process
 
@@ -43,4 +43,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@timavidon](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@timcode](https://www.twitter.com/yourusername)
+- Twitter - [@timcode](https://twitter.com/timcode)
