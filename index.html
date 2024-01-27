@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="heading">Spli<span>tter</span></h1>
+      <section class="tip-calculator">
+        <form class="form" action="#">
+          <div class="flex-row">
+            <label class="label-heading" for="bill">Bill</label>
+            <p class="bill-error error-msg" id="bill-error">Invalid number</p>
+          </div>
+          <input
+            dir="rtl"
+            class="bill"
+            type="text"
+            name="bill"
+            id="bill"
+            inputmode="numeric"
+            pattern="[0-9]*"
+            placeholder="0"
+            required
+            aria-errormessage="bill-error"
+            aria-invalid="false"
+          />
+
+          <fieldset class="tips">
+            <legend class="label-heading">Select Tip %</legend>
+
+            <label class="tip_percentage" for="five_percent">
+              5%
+              <input
+                class="tip"
+                type="radio"
+                name="tip_percentage"
+                id="five_percent"
+                value="5%"
+              />
+            </label>
+
+            <label class="tip_percentage" for="ten_percent"
+              >10%
+              <input
+                class="tip"
+                type="radio"
+                name="tip_percentage"
+                id="ten_percent"
+                value="10%"
+              />
+            </label>
+
+            <label class="tip_percentage" for="fifteen_percent"
+              >15%
+              <input
+                class="tip"
+                type="radio"
+                name="tip_percentage"
+                id="fifteen_percent"
+                value="15%"
+              />
+            </label>
+
+            <label class="tip_percentage" for="twentyfive_percent"
+              >25%
+              <input
+                class="tip"
+                type="radio"
+                name="tip_percentage"
+                id="twentyfive_percent"
+                value="25%"
+              />
+            </label>
+
+            <label class="tip_percentage" for="fifty_percent"
+              >50%
+              <input
+                class="tip"
+                type="radio"
+                name="tip_percentage"
+                id="fifty_percent"
+                value="50%"
+              />
+            </label>
+
+            <label for="custom_tip">
+              <span class="visually-hidden">Custom tip</span>
+              <p
+                class="custom-tip-error error-msg visually-hidden"
+                id="custom-tip-error"
+              >
+                Invalid number
+              </p>
+              <input
+                dir="rtl"
+                class="custom-tip tip"
+                type="text"
+                name="tip_percentage"
+                id="custom_tip"
+                placeholder="Custom"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                aria-errormessage="custom-tip-error"
+                aria-invalid="false"
+              />
+            </label>
+          </fieldset>
+
+          <div class="flex-row label-heading">
+            <label for="people_num">Number of People</label>
+            <p class="num_of_ppl-error error-msg" id="num_of_ppl-error">
+              Invalid number
+            </p>
+          </div>
+          <input
+            dir="rtl"
+            class="people_num"
+            type="text"
+            name="people_num"
+            id="people_num"
+            inputmode="numeric"
+            pattern="[0-9]*"
+            placeholder="0"
+            required
+            aria-errormessage="num_of_ppl-error"
+            aria-invalid="false"
+          />
+        </form>
+
+        <div class="results">
+          <div>  
+            <div class="result__tip-amount result">
+              <div class="person">
+                <p>
+                  Tip Amount
+                  <span class="per_person">/ person</span>
+                </p>
+                <span class="tip-result">$0.00</span>
+              </div>
+            </div>
+
+            <div class="result__total-amoun result">
+              <div class="person">
+                <p>
+                  Total
+                  <span class="per_person">/ person</span>
+                </p>
+                <span class="total-result">$0.00</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="button" type="reset">Reset</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      <small>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/timavidon" target="_blank">Tim Avidon</a>.
+      </small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
